@@ -1,34 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
-</head>
-<body>
-  <h1>Welcome to My Website</h1>
+<html>
+    <head>
+        <title>FORMS</title>
+        <style>
+            body {font-family: Arial, sans-serif;
+                margin: 20px; padding: 10px 20px;}
+            form {max-width: 600px;
+                margin: 0 auto;}
+            button {padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;}
+            button:hover {background-color: #45a049;}
+             textarea {width: 80%;
+                padding: 8px;
+                margin: 5px 0;}
+            h1{text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1><u>CURRICULUM FEEDBACK FORM</u></h1>
+    <form>
 
-  <h2>Navigation</h2>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
 
-  <h2>About This Site</h2>
-  <p>This is a sample <code>index.html</code> page created only with HTML.</p>
+        <label for="name"><b>Full Name:</b></label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email"><b>Enter Email:</b></label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="group"><b>Select your section:</b></label>
+        <select id="group" name="group" required>
+         <option value="" disabled selected>--Select your section--</option>
+            <option value="Bsc-DS">Bsc-DS</option>
+            <option value="Bsc-A">Bsc-A</option>
+            <option value="Bsc-B">Bsc-B</option>
+            <option value="Bsc-C">Bsc-C</option>
+            <option value="BBA">BBA</option>           
+            <option value="BCA-A">BCA-A</option>
+            <option value="BCA-B">BCA-B</option>
+            <option value="BCOM">BCOM</option>
+        </select>
+        <br><br><br>
+        <label for="college"><b>Select branch:</b></label>
+        <select id="college" name="college">
+        <option value="" disabled selected>--Select branch--</option>
+            <option value="ADC-TPG">ADC-TPG</option>
+            <option value="ADC-BVRM">ADC-BVRM</option>
+            <option value="ADC-KKD">ADC-KKD</option>
+            <option value="ADC-PKL">ADC-PKL</option>
+            <option value="ADC-Vizag">ADC-Vizag</option>
+            <option value="ADC-Vjy">ADC-Vjy</option>
+        </select>
+        <br><br><br>
 
-  <h3>Features</h3>
-  <ol>
-    <li>Simple structure</li>
-    <li>Easy to read</li>
-    <li>Works in all browsers</li>
-  </ol>
+        <p><b>Select year of study:</b></p>
+        <input type="radio" name="year" value="2022-2025" id="option1">
+        <label for="option1">2022-2025</label><br>
+        <input type="radio" name="group" value="2023-2026" id="option2">
+        <label for="option2">2023-2026</label><br>
+        <input type="radio" name="group" value="2024-2027" id="option3">
+        <label for="option3">2024-2027</label><br>
+        <br><br>
 
-  <h2>Contact</h2>
-  <p>You can reach me at <a href="mailto:example@email.com">example@email.com</a></p>
+        <label><b>How would you rate the curriculum?</b></label><br><br>    
+        <div class="radio-group">
+            <input type="radio" id="excellent" name="rating" value="Excellent">
+            <label for="excellent">Excellent</label>
+            <br>
+            <input type="radio" id="average" name="rating" value="Average">
+            <label for="average">very good</label>
+            <br>
+            <input type="radio" id="good" name="rating" value="Good">
+            <label for="good">Good</label>
+            <br>
+            <input type="radio" id="average" name="rating" value="Average">
+            <label for="average">Average</label>
+            <br>
+            <input type="radio" id="poor" name="rating" value="Poor">
+            <label for="poor">Poor</label>
+            <br><br>
+        </div>
+        <div clas="checkbox">
+            <label for="completion"><b>Select the programming languauges you have accomplished:</b></label><br><br>
+            <input type="checkbox" id="c" name="completion">
+            <label for="c">C language</label><br>
+            <input type="checkbox" id="r" name="completion">
+            <label for="c">R language</label><br>
+            <input type="checkbox" id="pyt" name="completion">
+            <label for="c">Python language</label><br>
+            <input type="checkbox" id="Java" name="completion">
+            <label for="c">Java language</label>
+        </div><br><br>
+        <label for="name"><b>Which subject did you like the most:</b></label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="remarks"><b>Remarks:</b></label>
 
-  <hr>
-  <p>&copy; 2025 My Website</p>
-</body>
+
+        <textarea id="remarks" name="remarks" rows="4" cols="20"></textarea>
+        <hr>
+        <br><br>
+        <button type="submit"><b>Submit Feedback</b></button>                  
+    </form>
+    </body>
+
 </html>
+
+
